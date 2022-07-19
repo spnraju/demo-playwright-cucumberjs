@@ -1,0 +1,43 @@
+{
+  "name": "demo-playwright-cucumberjs",
+  "version": "1.0.0",
+  "description": "Boilerplate for Playwright with CucumberJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --require-module @babel/register --require config/cucumber.conf.js --require features/step-definitions/**/*.js --format @cucumber/pretty-formatter",
+    "lint": "eslint --ext .js . --fix",
+    "prettier": "prettier **/*.js --write",
+    "update": "npx npm-check-updates --upgrade && npm install && npm audit fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spnraju/demo-playwright-cucumberjs.git"
+  },
+  "keywords": [
+    "Playwright",
+    "Cucumberjs",
+    "Boilerplate",
+    "E2E",
+    "end-to-end"
+  ],
+  "author": "Padmanabha Raju Sagi <contact@spnraju.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spnraju/demo-playwright-cucumberjs/issues"
+  },
+  "homepage": "https://github.com/spnraju/demo-playwright-cucumberjs#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.9",
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/register": "^7.18.9",
+    "@cucumber/cucumber": "^8.5.0",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "@playwright/test": "^1.23.4",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.20.0",
+    "eslint-config-prettier": "^8.5.0",
+    "playwright": "^1.23.4",
+    "prettier": "^2.7.1"
+  }
+}

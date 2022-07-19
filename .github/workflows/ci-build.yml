@@ -1,0 +1,24 @@
+name: ci-build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  main:
+    name: Chrome Headless
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 16
+      - run: npm install
+      - run: npm run test
+        env:
+          STANDARD: ${{ secrets.STANDARD }}
+          PASSWORD: ${{ secrets.PASSWORD }}

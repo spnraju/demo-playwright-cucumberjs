@@ -1,15 +1,26 @@
 import * as dotenv from 'dotenv';
 import { Before, BeforeAll, AfterAll, After, setDefaultTimeout } from '@cucumber/cucumber';
-import { chromium } from 'playwright';
+import { chromium, firefox, webkit } from 'playwright';
 
 dotenv.config();
 
 setDefaultTimeout(60000);
 
 BeforeAll(async function () {
-  global.browser = await chromium.launch({
-    headless: true,
-  });
+  switch (process.env.BROWSER) {
+    case 'chrome':
+      global.browser = await chromium.launch();
+      break;
+    case 'firefox':
+      global.browser = await firefox.launch();
+      break;
+    case 'webkit':
+      global.browser = await webkit.launch();
+      break;
+    default:
+      global.browser = await chromium.launch();
+      break;
+  }
 });
 
 // close the browser

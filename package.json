@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js --require-module @babel/register --require config/cucumber.conf.js --require features/step-definitions/**/*.js --format @cucumber/pretty-formatter",
+    "test:chrome": "set BROWSER=chrome && npm run test",
+    "test:firefox": "set BROWSER=firefox && npm run test",
+    "test:webkit": "set BROWSER=webkit && npm run test",
     "lint": "eslint --ext .js . --fix",
     "prettier": "prettier **/*.js --write",
     "update": "npx npm-check-updates --upgrade && npm install && npm audit fix"

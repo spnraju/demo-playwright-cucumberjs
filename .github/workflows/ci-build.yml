@@ -9,8 +9,12 @@ on:
       - main
 
 jobs:
-  main:
-    name: Chrome Headless
+  playwright:
+    name: Playwright-Cucumber on ${{ matrix.browser }}
+    strategy:
+      fail-fast: true
+      matrix:
+        browser: [chrome, firefox, webkit]
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@master
@@ -18,7 +22,7 @@ jobs:
         with:
           node-version: 16
       - run: npm install
-      - run: npm run test
+      - run: npm run test:${{ matrix.browser }}
         env:
           STANDARD: ${{ secrets.STANDARD }}
           PASSWORD: ${{ secrets.PASSWORD }}

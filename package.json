@@ -36,11 +36,11 @@
     "@babel/register": "^7.18.9",
     "@cucumber/cucumber": "^8.5.0",
     "@cucumber/pretty-formatter": "^1.0.0",
-    "@playwright/test": "^1.23.4",
+    "@playwright/test": "^1.24.0",
     "dotenv": "^16.0.1",
     "eslint": "^8.20.0",
     "eslint-config-prettier": "^8.5.0",
-    "playwright": "^1.23.4",
+    "playwright": "^1.24.0",
     "prettier": "^2.7.1"
   }
 }

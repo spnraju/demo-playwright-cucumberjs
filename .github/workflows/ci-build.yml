@@ -10,7 +10,7 @@ on:
 
 jobs:
   playwright:
-    name: Playwright-Cucumber on ${{ matrix.browser }}
+    name: ${{ matrix.browser }} on windows
     strategy:
       fail-fast: true
       matrix:

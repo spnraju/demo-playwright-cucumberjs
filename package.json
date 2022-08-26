@@ -31,16 +31,16 @@
   "homepage": "https://github.com/spnraju/demo-playwright-cucumberjs#readme",
   "devDependencies": {
     "@babel/cli": "^7.18.10",
-    "@babel/core": "^7.18.10",
+    "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
     "@babel/register": "^7.18.9",
-    "@cucumber/cucumber": "^8.5.1",
+    "@cucumber/cucumber": "^8.5.2",
     "@cucumber/pretty-formatter": "^1.0.0",
-    "@playwright/test": "^1.25.0",
+    "@playwright/test": "^1.25.1",
     "dotenv": "^16.0.1",
-    "eslint": "^8.22.0",
+    "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
-    "playwright": "^1.25.0",
+    "playwright": "^1.25.1",
     "prettier": "^2.7.1"
   }
 }

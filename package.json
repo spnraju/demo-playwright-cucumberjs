@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js --require-module @babel/register --require config/cucumber.conf.js --require features/step-definitions/**/*.js --format @cucumber/pretty-formatter",
-    "playwright": "yarn playwright install",
+    "playwright": "playwright install",
     "test:chrome": "set BROWSER=chrome && npm run test",
     "test:firefox": "set BROWSER=firefox && npm run test",
     "test:webkit": "set BROWSER=webkit && npm run test",

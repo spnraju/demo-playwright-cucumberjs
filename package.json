@@ -10,7 +10,7 @@
     "test:webkit": "set BROWSER=webkit && npm run test",
     "lint": "eslint --ext .js . --fix",
     "prettier": "prettier **/*.js --write",
-    "update": "npm update --save"
+    "update": "yarn up '**'"
   },
   "repository": {
     "type": "git",
@@ -30,17 +30,17 @@
   },
   "homepage": "https://github.com/spnraju/demo-playwright-cucumberjs#readme",
   "devDependencies": {
-    "@babel/cli": "^7.23.4",
-    "@babel/core": "^7.23.7",
-    "@babel/preset-env": "^7.23.7",
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
     "@babel/register": "^7.23.7",
-    "@cucumber/cucumber": "^9.6.0",
+    "@cucumber/cucumber": "^10.3.1",
     "@cucumber/pretty-formatter": "^1.0.0",
-    "@playwright/test": "^1.40.1",
-    "dotenv": "^16.3.1",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^8.10.0",
-    "playwright": "^1.37.1",
-    "prettier": "^2.8.8"
+    "@playwright/test": "^1.42.1",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "playwright": "^1.42.1",
+    "prettier": "^3.2.5"
   }
 }

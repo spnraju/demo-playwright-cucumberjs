@@ -1391,9 +1391,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cucumber/cucumber@npm:^10.3.1":
-  version: 10.3.1
-  resolution: "@cucumber/cucumber@npm:10.3.1"
+"@cucumber/cucumber@npm:^10.3.2":
+  version: 10.3.2
+  resolution: "@cucumber/cucumber@npm:10.3.2"
   dependencies:
     "@cucumber/ci-environment": "npm:10.0.0"
     "@cucumber/cucumber-expressions": "npm:17.0.1"
@@ -1430,7 +1430,7 @@ __metadata:
     string-argv: "npm:0.3.1"
     strip-ansi: "npm:6.0.1"
     supports-color: "npm:^8.1.1"
-    tmp: "npm:^0.2.1"
+    tmp: "npm:0.2.3"
     type-fest: "npm:^4.8.3"
     util-arity: "npm:^1.1.0"
     xmlbuilder: "npm:^15.1.1"
@@ -1438,7 +1438,7 @@ __metadata:
     yup: "npm:1.2.0"
   bin:
     cucumber-js: bin/cucumber.js
-  checksum: 10c0/df32c7fd4814844ec32bf84830e82d56f70065a2104f96b6e87d3d5fa23741e08415f09814b758a62fe2d0754cd3e0418526f2d728bc23d0323a0a544b4cf4b7
+  checksum: 10c0/19cbb67ef0d6144240f27ad52eaea3f011ff91f3258dabde4c84b974057a9a3eb0159ebc4d06f54e8e1ee5d3df27572fea0eba6972241480e6ef6f01f0a5f220
   languageName: node
   linkType: hard
 
@@ -1533,9 +1533,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cucumber/pretty-formatter@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@cucumber/pretty-formatter@npm:1.0.0"
+"@cucumber/pretty-formatter@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@cucumber/pretty-formatter@npm:1.0.1"
   dependencies:
     ansi-styles: "npm:^5.0.0"
     cli-table3: "npm:^0.6.0"
@@ -1544,7 +1544,7 @@ __metadata:
   peerDependencies:
     "@cucumber/cucumber": ">=7.0.0"
     "@cucumber/messages": "*"
-  checksum: 10c0/9a4d2bd6586a4b0bd8eb04b5521515dafe351c6d976f7292d836f12bf949b2701c28c484e90bcfa773a99c8e0f73596c29015265adb264d4a766d953247237f3
+  checksum: 10c0/16ac0174bdad47718296c241d20e3ac6b305809675da7c64df8f15542a66be7603dad73a37bbb850241d51da8bbba61e461b861c7e41c0dbbd64684e93a8c265
   languageName: node
   linkType: hard
 
@@ -2294,8 +2294,8 @@ __metadata:
     "@babel/core": "npm:^7.24.3"
     "@babel/preset-env": "npm:^7.24.3"
     "@babel/register": "npm:^7.23.7"
-    "@cucumber/cucumber": "npm:^10.3.1"
-    "@cucumber/pretty-formatter": "npm:^1.0.0"
+    "@cucumber/cucumber": "npm:^10.3.2"
+    "@cucumber/pretty-formatter": "npm:^1.0.1"
     "@playwright/test": "npm:^1.42.1"
     dotenv: "npm:^16.4.5"
     eslint: "npm:^8.57.0"
@@ -4396,7 +4396,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tmp@npm:^0.2.1":
+"tmp@npm:0.2.3":
   version: 0.2.3
   resolution: "tmp@npm:0.2.3"
   checksum: 10c0/3e809d9c2f46817475b452725c2aaa5d11985cf18d32a7a970ff25b568438e2c076c2e8609224feef3b7923fa9749b74428e3e634f6b8e520c534eef2fd24125
